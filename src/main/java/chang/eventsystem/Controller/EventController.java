@@ -21,9 +21,5 @@ public class EventController {
         m.addAttribute("ant",count);
         return  "event_count";
     }
-    @PostMapping("event/new")
-    public String eventNew(@ResponseBody EventParam, Model m){
-        System.out.println("接收表單 type="+eventParam.getType());
-        System.out.println("接收表單 subject="+eventParam.getSubject());
-    }
+
 }
